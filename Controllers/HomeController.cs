@@ -17,6 +17,38 @@ namespace EscapeResturant.Controllers
         {
             return View();
         }
+        public IActionResult About()
+        {
+            return View();
+        }
+        public IActionResult Menu()
+        {
+            return View();
+        }
+        public IActionResult Breakfast()
+        {
+            return View();
+        }
+        public IActionResult Lunch()
+        {
+            return View();
+        }
+        public IActionResult Dinner()
+        {
+            return View();
+        }
+        public IActionResult Chef()
+        {
+            return View();
+        }
+        public IActionResult Team()
+        {
+            return View();
+        }
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

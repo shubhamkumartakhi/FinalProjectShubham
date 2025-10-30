@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - [Your Restaurant Name]</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+        }
+
+        h1, h2, h3, h4, h5, h6, .display-4, .display-5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+
+        /* --- Hero Section --- */
+        .hero-section {
+            background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%D&auto=format&fit=crop&w=2070&q=80') no-repeat center center;
+            background-size: cover;
+            min-height: 70vh;
+            position: relative;
+        }
+
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        /* --- Full Width Story Section --- */
+        .story-text-column {
+            min-height: 100vh;
+        }
+
+        .story-image-column img {
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+        }
+      
+
+
+        /* --- Philosophy Section --- */
+        .philosophy-section {
+            background: url('https://images.unsplash.com/photo-1543373014-cfe4f4bc1cdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%D&auto=format&fit=crop&w=1974&q=80') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed; /* This creates the parallax effect */
+            position: relative;
+        }
+
+        .philosophy-overlay {
+            background-color: rgba(33, 37, 41, 0.8); /* Dark overlay */
+        }
+
+        .philosophy-icon {
+            font-size: 3rem;
+            color: #ffc107; /* Bootstrap 'warning' color - a nice gold */
+        }
+
+        /* --- Team Section --- */
+        .team-card {
+            border: 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .team-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+            }
+
+            .team-card img {
+                object-fit: cover;
+                height: 300px;
+            }
+
+        /* --- CTA Section --- */
+        .cta-section {
+            background-color: #f8f9fa; /* Bootstrap 'light' */
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-section d-flex align-items-center justify-content-center">
+        <div class="hero-overlay"></div>
+        <div class="container-fluid text-center text-white" style="position: relative; z-index: 2;" data-aos="fade-in" data-aos-duration="1000">
+            <h1 class="display-4">Our Story</h1>
+            <p class="lead fs-3">Crafting moments of culinary magic since 2015.</p>
+        </div>
+    </header>
+    <section class="our-story-section">
+        <div class="row g-0" data-aos="fade-in">
+            <div class="col-lg-6 order-lg-2 story-image-column">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%D&auto=format&fit=crop&w=1974&q=80" alt="Restaurant Interior">
+            </div>
+            <div class="col-lg-6 order-lg-1 d-flex align-items-center story-text-column p-5">
+                <div style="width: auto;" class="mx-auto" data-aos="fade-up">
+                    <h2 class="display-5 mb-3">The [Restaurant Name] Story</h2>
+                    <p class="lead">It all started with a simple idea: to create a space where food is an experience, not just a meal. Founded by Chef Elara Vance, [Your Restaurant Name] was born from a passion for authentic flavors and the joy of shared tables.</p>
+                    <p>We believe in the power of food to connect people. Our journey began in a small kitchen, experimenting with family recipes and local ingredients. Today, we've grown into a beloved neighborhood destination, but our core philosophy remains unchanged: serve honest, beautiful food that speaks to the heart.</p>
+                    <a href="#team" class="btn btn-outline-dark mt-3">Meet Our Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="philosophy-section py-5 text-white">
+        <div class="philosophy-overlay py-5">
+            <div class="container-fluid text-center py-5">
+                <h2 class="display-5 mb-5" data-aos="fade-up">Our Culinary Philosophy</h2>
+                <div class="row" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <i class="bi bi-tree philosophy-icon mb-3"></i>
+                        <h3 class="h4">Farm-to-Table</h3>
+                        <p class="text-white-50">We partner with local farmers and purveyors to source the freshest, highest-quality seasonal ingredients.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <i class="bi bi-fire philosophy-icon mb-3"></i>
+                        <h3 class="h4">Artisanal Craft</h3>
+                        <p class="text-white-50">From our hand-rolled pasta to our slow-simmered sauces, every dish is crafted with patience, skill, and passion.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <i class="bi bi-globe-americas philosophy-icon mb-3"></i>
+                        <h3 class="h4">Global Inspiration</h3>
+                        <p class="text-white-50">Our menu is a journey, blending timeless techniques with modern flavors inspired by our travels and culinary heritage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team" class="team-section py-5 bg-light">
+        <div class="container-fluid px-lg-5">
+            <div class="row text-center mb-5" data-aos="fade-up">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5">Meet Our Culinary Stars</h2>
+                    <p class="lead text-muted">The passion and expertise behind every plate.</p>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card team-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%D&auto=format&fit=crop&w=870&q=80" class="card-img-top" alt="Executive Chef">
+                        <div class="card-body text-center">
+                            <h4 class="card-title mb-1">Elara Vance</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Executive Chef & Founder</h6>
+                            <p class="card-text small">With 15 years of experience in Michelin-starred kitchens, Chef Elara brings a visionary approach to modern European cuisine.</p>
+                            <a href="#" class="text-dark mx-2"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="text-dark mx-2"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-dark mx-2"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card team-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1622023930300-1d523661f435?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%D&auto=format&fit=crop&w=870&q=80" class="card-img-top" alt="Pastry Chef">
+                        <div class="card-body text-center">
+                            <h4 class="card-title mb-1">Marcus Cole</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Head Pastry Chef</h6>
+                            <p class="card-text small">Marcus is a master of flavor and texture, creating desserts that are as beautiful as they are delicious.</p>
+                            <a href="#" class="text-dark mx-2"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card team-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1551873915-3b610d3e6c89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%D&auto=format&fit=crop&w=870&q=80" class="card-img-top" alt="Sommelier">
+                        <div class="card-body text-center">
+                            <h4 class="card-title mb-1">Anya Sharma</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">General Manager & Sommelier</h6>
+                            <p class="card-text small">Anya ensures every guest feels at home. Her curated wine list features hidden gems and perfect pairings.</p>
+                            <a href="#" class="text-dark mx-2"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta-section py-5">
+        <div class="container-fluid text-center py-5" data-aos="fade-up">
+            <h2 class="display-6 mb-3">Join Us for an Unforgettable Meal</h2>
+            <p class="lead text-muted mb-4">We're saving a table for you.</p>
+            <a href="#" class="btn btn-dark btn-lg px-5 py-3">Make a Reservation</a>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,  // Animation duration
+            once: true,     // Whether animation should happen only once
+        });
+    </script>
+
+</body>
+</html>
